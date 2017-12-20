@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col"><h4>Convert Temperature Celcius into</h4></div>
+</div><br>
+	<div class="row">
+		
+		<div class="col-6">
+			<input name="name" class="form-control" id="inputCelcius"
+			 placeholder="Enter Temperature in Celcius" (keyup)="temperatureConverter($event.target.value)" (change)="temperatureConverter($event.target.value)">
+		</div>
+	</div><br>
+	<div class="row">
+		<div class="col-4">
+			<div class="col">
+				Fahrenheit: {{fahreheight}}
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="col">
+				Kelvin: {{kelvin}}
+			</div>
+		</div>
+	</div>

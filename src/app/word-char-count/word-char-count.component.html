@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col"><h4>Count Characters and Words</h4></div>
+</div><br>
+	<div class="row">
+		
+		<div class="col-6">
+			<textarea class="form-control" placeholder="Input your text" (keyup)="lengthWCCount($event.target.value)"></textarea>
+		</div>
+	</div><br>
+	<div class="row">
+		<div class="col-4">
+			<div class="col">
+				Words: <span id="outputGrams">{{countWords}}</span>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="col">
+				Characters: <span id="outputOunces">{{countChar}} </span>
+			</div>
+		</div>
+	</div>

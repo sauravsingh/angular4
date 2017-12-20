@@ -1,0 +1,16 @@
+<div class="grid grid-pad">
+<div  class="col-1-4">
+	<a href="{{COUPONSURL}}" target="_blank"><div class="module hero">
+      <h4>{{COUPONSTAG}}</h4>
+    </div></a>
+    <a href="{{NEWSURL}}" target="_blank"><div class="module hero">
+      <h4>{{NEWSTAG}}</h4>
+    </div></a>
+	<a *ngFor="let menu of menues" routerLink="/{{menu.url}}">
+    <div class="module hero">
+      <h4>{{menu.name}}</h4>
+    </div>
+  </a>
+</div>
+  
+</div>

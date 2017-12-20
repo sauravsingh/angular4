@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="col"><h4>Convert Weight Kilograms into</h4></div>
+</div><br>
+	<div class="row">
+		
+		<div class="col-6">
+			<input name="name" class="form-control" id="inputKlGrams"
+			 placeholder="Enter Kilograms" (keyup)="weightConverter($event.target.value)" (change)="weightConverter($event.target.value)">
+		</div>
+	</div><br>
+	<div class="row">
+		<div class="col-4">
+			<div class="col">
+				Grams: <span id="outputGrams">{{grams}}</span>
+			</div>
+			<div class="col">
+				Pounds: <span id="outputPounds">{{pounds}}</span>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="col">
+				Ounces: <span id="outputOunces">{{ounces}} </span>
+			</div>
+			<div class="col">
+				Stones: <span id="outputStones">{{stones}} </span>
+			</div>
+		</div>
+	</div>
